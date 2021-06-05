@@ -1,0 +1,77 @@
+#content {
+    font-family: Roboto, Helvetica Neue, arial, sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+#title {
+    font-size: 40px;
+}
+
+.subheader {
+    font-size: 30px;
+}
+
+.subsubheader {
+    font-style: italic;
+}
+
+#vital-chart-container {
+    display: flex;
+    justify-content: center;
+}
+
+#live-readings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px #dbdbdb;*/
+    /*border-style: solid;*/
+    /*padding: 20px;*/
+}
+
+#live-readings-header hr {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content-header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.vital-container {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border: 2px solid red;*/
+    text-align: center;
+}
+
+.vital-title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.vital-reading {
+    font-size: 30px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table {
+    /*font-family: arial, sans-serif;*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

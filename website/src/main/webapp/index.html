@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lifeline</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="updateAll()">
+<div id="content">
+    <div id="header">
+        <div id="title">Lifeline</div>
+        <div id="patient-info">Patient: Terry Test</div>
+        <div id="patient-doctor">Doctor: Dr. Smith</div>
+    </div>
+
+    <div id=vital-chart-container>
+        <!-- <div id=vital-chart-title class="subheader">Vital Reading History</div> -->
+        <div id=vital-chart></div>
+    </div>
+    
+    <div id="live-readings-header" class="content-header">
+        <div id="live-readings-title" class="subheader">Live Vital Readings</div>
+        <div id="live-readings-last-update" class="subsubheader">Last updated: <span id="last-vital-update">???</span></div>
+        <button onclick="updateVitals()">Refresh vitals</button>
+        <hr>
+    </div>
+
+    <div id="live-readings">
+        <div class="vital-container">
+            <div class="vital-title">Heart rate:</div>
+            <div class="vital-reading">
+                <span id="hr">75</span>
+            </div>
+        </div>
+
+        <div class="vital-container">
+            <div class="vital-title">Oxygen level:</div>
+            <div class="vital-reading">
+                <span id="o2">98</span>
+            </div>
+        </div>
+
+        <div class="vital-container">
+            <div class="vital-title">Patient orientation:</div>
+            <div class="vital-reading">
+                <span id="orientation">flat</span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div id="events-header" class="content-header">
+        <div id="events-title" class="subheader">Event History</div>
+        <div id="events-subheading" class="subsubheader"><span id="event-count">???</span> events shown</div>
+        <button onclick="updateEvents()">Refresh events</button>
+    </div>
+    <div id="events-container">
+        <div id="event-table">
+            <table>
+                <colgroup>
+                    <col style="width:15%">
+                    <col style="width:10%">
+                    <col style="width:75%">
+                </colgroup>
+                <tr>
+                    <th>Time</th>
+                    <th>Event Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>TIME</td>
+                    <td>TYPE</td>
+                    <td>DESCRIPTION</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
